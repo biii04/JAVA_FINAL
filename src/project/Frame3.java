@@ -7,17 +7,17 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
  
-public class MyFrame extends JFrame {
+public class Frame3 extends JFrame {
 
     //생성자
-    public MyFrame() {
+    public Frame3() {
     	
     	
         //타이틀 생성
-        setTitle("Main");
+        setTitle("Pause");
 
         //버튼 생성
-        JButton b1 = new JButton("START");
+        JButton b1 = new JButton("RESTART");
         JButton b2 = new JButton("EXIT");
         
         setSize(200,400); //크기 설정
@@ -60,7 +60,7 @@ public class MyFrame extends JFrame {
 
     //실행창
     public static void main(String[] args) {
-        new MyFrame();
+        new Frame1();
     }
 
  

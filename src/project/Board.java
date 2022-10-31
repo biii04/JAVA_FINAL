@@ -327,13 +327,17 @@ public class Board extends JPanel {
             // Java 12 switch expressions
             switch (keycode) {
 
-                case KeyEvent.VK_P :  pause(); break;
+//                case KeyEvent.VK_ESCAPE :  pause(); break;
                 case KeyEvent.VK_LEFT : tryMove(curPiece, curX - 1, curY); break;
                 case KeyEvent.VK_RIGHT : tryMove(curPiece, curX + 1, curY); break;
-                case KeyEvent.VK_DOWN : tryMove(curPiece.rotateRight(), curX, curY); break;
                 case KeyEvent.VK_UP : tryMove(curPiece.rotateLeft(), curX, curY); break;
-                case KeyEvent.VK_SPACE : dropDown();
-                case KeyEvent.VK_D : oneLineDown();
+                case KeyEvent.VK_DOWN : oneLineDown();
+//                case KeyEvent.VK_DOWN : tryMove(curPiece.rotateRight(), curX, curY); break;
+//                case KeyEvent.VK_SPACE : oneLineDown();
+//                case KeyEvent.VK_D : oneLineDown();
+//                case KeyEvent.VK_ESCAPE : System.exit(1);
+                case KeyEvent.VK_ESCAPE : new Frame3();
+                
             }
         }
     }
